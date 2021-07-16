@@ -15,14 +15,10 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(name, price, catergory) {
-  const menuItem = {
-    name , price, catergory 
-  }
-  return menuItem
+function createMenuItem() {
+
 }
-console.log(createMenuItem(`task 1`, `tacos`, 8, `lunch`))
-  
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -34,8 +30,8 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
-
-
+const menuItem2 = createMenuItem("pizza", 5, "lunch");
+console.log(menuItem2);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
 burger object below that automatically calculates price depending on the a string received as a parameter. 
@@ -81,8 +77,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
-reviews[7].feedback = {name: "Reyna", rating: 3.5, feedback: "Diggin the absolute vibe of this place!!!!"};
-console.log(`task 4`, reviews);
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+console.log("task 4", reviews);
 
 
 
@@ -112,10 +108,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(array, index) {
-  return array[index].feedback
+function getReviewByIndex() {
+  
 }
-console.log(`task 6`, getReviewByIndex(reviews,0));
+
 
   
 
@@ -132,9 +128,9 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(array){
-
+return `${array[array.length-1].name} gave the restaurant a ${array[array.length -1].rating} star review. and their feedback was: ${array[array.length -1].feedback}`;
 }
-
+console.log(`task 7`, getLastReview(reviews));
 
 
 
